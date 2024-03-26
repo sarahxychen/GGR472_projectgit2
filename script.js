@@ -36,8 +36,8 @@ document.getElementById("defaultOpen").click();
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyYWh4eWNoZW4iLCJhIjoiY2xyZnB4c2h0MDhnMzJqcGpvZ2sxOHk4byJ9.yIz3cOJ6CJBeoUb3hvbBFA'; //****ADD YOUR PUBLIC ACCESS TOKEN*****
 
 // Initialize time map and edit to your preference
-const timemap = new mapboxgl.Map({
-    container: 'timemap', // container id in HTML
+const datamap = new mapboxgl.Map({
+    container: 'datamap', // container id in HTML
     style: 'mapbox://styles/sarahxychen/clskmpfs603tf01p25v25bs4j',  //change if we want
     center: [-79.39, 43.65],  // starting point, longitude/latitude
     zoom: 12 // starting zoom level
@@ -56,15 +56,15 @@ map.addControl(new mapboxgl.NavigationControl());
 --------------------------------------------------------------------*/
 
 // Initialize data map and edit to your preference
-const datamap = new mapboxgl.Map({
-  container: 'datamap', // container id in HTML
-  style: 'mapbox://styles/sarahxychen/clskmpfs603tf01p25v25bs4j',  //change if we want
-  center: [-79.39, 43.65],  // starting point, longitude/latitude
-  zoom: 12 // starting zoom level
-});
+// const datamap = new mapboxgl.Map({
+//   container: 'datamap', // container id in HTML
+//   style: 'mapbox://styles/sarahxychen/clskmpfs603tf01p25v25bs4j',  //change if we want
+//   center: [-79.39, 43.65],  // starting point, longitude/latitude
+//   zoom: 12 // starting zoom level
+// });
 
 // Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
+// map.addControl(new mapboxgl.NavigationControl());
 
 
 
